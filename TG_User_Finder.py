@@ -18,7 +18,7 @@ def check(phone_number, usr):
 
 def list_checker():
     list_file = input("List of numbers: ")
-    usr = input("Username Target: ")
+    usr = input("Username Target:sonithpop ")
     list = open(list_file, 'r').read().splitlines()
     for num in list:
         try:
@@ -37,10 +37,11 @@ def list_checker():
             print ("Null")
 
 if __name__ == '__main__':
-    phone = 'Your TG Number'
-    client = TelegramClient(phone, API ID, 'API Hash')
+    phone = '7002438143'
+    client = TelegramClient(phone, 7338599 ,'f4b60640a1338cccf4488370097f9998')
     client.connect()
     if not client.is_user_authorized():
         client.send_code_request(phone)
         client.sign_in(phone, input('Enter the code: '))
     list_checker()
+
